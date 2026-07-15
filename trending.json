@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-15T00:00:00Z",
+  "updatedAt": "2026-07-15T04:24:36Z",
   "timezoneNote": "App should refresh at most once per local day. Automation regenerates around 06:00 Asia/Hong_Kong (22:00 UTC previous calendar day).",
   "source": "curated-blind-pull-hits",
   "groups": [
@@ -9,11 +9,36 @@
       "title": "SV8 超電突圍 / 噴湧",
       "subtitle": "皮卡丘 ex SAR 係近期盲抽頭號大獎",
       "cards": [
-        { "cardID": "sv08-219", "nameTW": "皮卡丘 ex（SAR）", "nameHK": "比卡超 ex（SAR）", "tag": "SAR #1" },
-        { "cardID": "sv08-238", "nameTW": "皮卡丘 ex（特別插畫）", "nameHK": "比卡超 ex（特別插畫）", "tag": "SIR" },
-        { "cardID": "sv08-057", "nameTW": "皮卡丘 ex（RR）", "nameHK": "比卡超 ex（RR）", "tag": "RR" },
-        { "cardID": "sv08-203", "nameTW": "美納斯 ex（SAR）", "nameHK": "美納斯 ex（SAR）", "tag": "SAR" },
-        { "cardID": "sv08-223", "nameTW": "三首惡龍 ex（SAR）", "nameHK": "三首惡龍 ex（SAR）", "tag": "SAR" }
+        {
+          "cardID": "sv08-219",
+          "nameTW": "皮卡丘 ex（SAR）",
+          "nameHK": "比卡超 ex（SAR）",
+          "tag": "SAR #1"
+        },
+        {
+          "cardID": "sv08-238",
+          "nameTW": "皮卡丘 ex（特別插畫）",
+          "nameHK": "比卡超 ex（特別插畫）",
+          "tag": "SIR"
+        },
+        {
+          "cardID": "sv08-057",
+          "nameTW": "皮卡丘 ex（RR）",
+          "nameHK": "比卡超 ex（RR）",
+          "tag": "RR"
+        },
+        {
+          "cardID": "sv08-203",
+          "nameTW": "美納斯 ex（SAR）",
+          "nameHK": "美納斯 ex（SAR）",
+          "tag": "SAR"
+        },
+        {
+          "cardID": "sv08-223",
+          "nameTW": "三首惡龍 ex（SAR）",
+          "nameHK": "三首惡龍 ex（SAR）",
+          "tag": "SAR"
+        }
       ]
     },
     {
@@ -21,10 +46,30 @@
       "title": "SV3.5 / 151",
       "subtitle": "復刻盲抽長青款",
       "cards": [
-        { "cardID": "sv03.5-199", "nameTW": "噴火龍 ex（SAR）", "nameHK": "背襲龍 ex（SAR）", "tag": "SAR" },
-        { "cardID": "sv03.5-006", "nameTW": "噴火龍 ex（RR）", "nameHK": "背襲龍 ex（RR）", "tag": "RR" },
-        { "cardID": "sv03.5-205", "nameTW": "夢幻 ex（SAR）", "nameHK": "夢幻 ex（SAR）", "tag": "SAR" },
-        { "cardID": "sv03.5-151", "nameTW": "夢幻 ex（RR）", "nameHK": "夢幻 ex（RR）", "tag": "RR" }
+        {
+          "cardID": "sv03.5-199",
+          "nameTW": "噴火龍 ex（SAR）",
+          "nameHK": "背襲龍 ex（SAR）",
+          "tag": "SAR"
+        },
+        {
+          "cardID": "sv03.5-006",
+          "nameTW": "噴火龍 ex（RR）",
+          "nameHK": "背襲龍 ex（RR）",
+          "tag": "RR"
+        },
+        {
+          "cardID": "sv03.5-205",
+          "nameTW": "夢幻 ex（SAR）",
+          "nameHK": "夢幻 ex（SAR）",
+          "tag": "SAR"
+        },
+        {
+          "cardID": "sv03.5-151",
+          "nameTW": "夢幻 ex（RR）",
+          "nameHK": "夢幻 ex（RR）",
+          "tag": "RR"
+        }
       ]
     },
     {
@@ -32,7 +77,12 @@
       "title": "SV4a 閃色寶藏",
       "subtitle": "高級擴充包常見回歸",
       "cards": [
-        { "cardID": "sv04.5-349", "nameTW": "噴火龍 ex（SAR）", "nameHK": "背襲龍 ex（SAR）", "tag": "SAR" }
+        {
+          "cardID": "sv04.5-349",
+          "nameTW": "噴火龍 ex（SAR）",
+          "nameHK": "背襲龍 ex（SAR）",
+          "tag": "SAR"
+        }
       ]
     },
     {
@@ -40,7 +90,12 @@
       "title": "MEGA Dream ex",
       "subtitle": "最新高級包熱門",
       "cards": [
-        { "cardID": "mep-023", "nameTW": "超級噴火龍 X ex（MA）", "nameHK": "超級背襲龍 X ex（MA）", "tag": "MA" }
+        {
+          "cardID": "mep-023",
+          "nameTW": "超級噴火龍 X ex（MA）",
+          "nameHK": "超級背襲龍 X ex（MA）",
+          "tag": "MA"
+        }
       ]
     },
     {
@@ -48,7 +103,12 @@
       "title": "Promo / 聯名",
       "subtitle": "高價收藏向",
       "cards": [
-        { "cardID": "svp-085", "nameTW": "戴灰色毛氈帽的皮卡丘", "nameHK": "戴灰色毛氈帽的比卡超", "tag": "Van Gogh" }
+        {
+          "cardID": "svp-085",
+          "nameTW": "戴灰色毛氈帽的皮卡丘",
+          "nameHK": "戴灰色毛氈帽的比卡超",
+          "tag": "Van Gogh"
+        }
       ]
     },
     {
@@ -56,9 +116,24 @@
       "title": "經典高利 Alt / VMAX",
       "subtitle": "盲抽池仍常見回歸卡",
       "cards": [
-        { "cardID": "swsh7-215", "nameTW": "月亮伊布 VMAX（Alt）", "nameHK": "月亮伊布 VMAX（Alt）", "tag": "Moonbreon" },
-        { "cardID": "swsh11-212", "nameTW": "騎拉帝納 VSTAR（Alt）", "nameHK": "騎拉帝納 VSTAR（Alt）", "tag": "Alt" },
-        { "cardID": "swsh7-65", "nameTW": "太陽伊布 VMAX", "nameHK": "太陽伊布 VMAX", "tag": "VMAX" }
+        {
+          "cardID": "swsh7-215",
+          "nameTW": "月亮伊布 VMAX（Alt）",
+          "nameHK": "月亮伊布 VMAX（Alt）",
+          "tag": "Moonbreon"
+        },
+        {
+          "cardID": "swsh11-212",
+          "nameTW": "騎拉帝納 VSTAR（Alt）",
+          "nameHK": "騎拉帝納 VSTAR（Alt）",
+          "tag": "Alt"
+        },
+        {
+          "cardID": "swsh7-65",
+          "nameTW": "太陽伊布 VMAX",
+          "nameHK": "太陽伊布 VMAX",
+          "tag": "VMAX"
+        }
       ]
     },
     {
@@ -66,8 +141,18 @@
       "title": "SV9 搭檔",
       "subtitle": "人物支援 ex",
       "cards": [
-        { "cardID": "sv09-053", "nameTW": "奇樹的電肚蛙 ex", "nameHK": "奇樹的電肚蛙 ex", "tag": "ex" },
-        { "cardID": "sv09-056", "nameTW": "莉莉艾的皮皮 ex", "nameHK": "莉莉艾的皮皮 ex", "tag": "ex" }
+        {
+          "cardID": "sv09-053",
+          "nameTW": "奇樹的電肚蛙 ex",
+          "nameHK": "奇樹的電肚蛙 ex",
+          "tag": "ex"
+        },
+        {
+          "cardID": "sv09-056",
+          "nameTW": "莉莉艾的皮皮 ex",
+          "nameHK": "莉莉艾的皮皮 ex",
+          "tag": "ex"
+        }
       ]
     }
   ]
