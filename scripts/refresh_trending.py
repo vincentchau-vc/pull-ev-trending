@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-"""Scrape SNKRDUNK hottest Pokemon singles → trending.json.
+"""Scrape SNKRDUNK popular singles (Pokémon + One Piece) → trending.json.
 
-Only rewrites the file (and bumps updatedAt) when the ranked card list changes.
+Only rewrites the file (and bumps updatedAt) when the ranked card lists change.
+Card display names are English. App lets the user pick one brand at a time.
 """
 
 from __future__ import annotations
@@ -20,22 +21,36 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "trending.json"
 MAP_PATH = ROOT / "apparel-map.json"
 
-HOTTEST_URL = (
-    "https://snkrdunk.com/search?"
-    + urllib.parse.urlencode(
-        {
+FEEDS = [
+    {
+        "id": "pokemon",
+        "title": "Pokémon",
+        "subtitle": "Trading card singles · hottest",
+        "params": {
             "keywords": "Pokemon Card Game トレカ (シングルカード)",
             "searchCategoryIds": "6/33",
             "brandIds": "pokemon",
             "sort": "hottest",
             "page": "1",
-        }
-    )
-)
+        },
+    },
+    {
+        "id": "onepiece",
+        "title": "One Piece",
+        "subtitle": "Trading card singles · popular",
+        "params": {
+            "keywords": "ONE PIECE トレカ (シングルカード)",
+            "searchCategoryIds": "6/33",
+            "brandIds": "onepiece",
+            "sort": "popular",
+            "page": "1",
+        },
+    },
+]
 
 UA = {"User-Agent": "PullEV-trending-refresh/1.0 (+https://github.com/vincentchau-vc/pull-ev-trending)"}
 
-# Seed: SNKRDUNK apparelId → TCGdex-style cardID (from PullEV SnkrdunkCardRegistry).
+# Seed: SNKRDUNK apparelId → TCGdex-style cardID (Pokémon only, from PullEV registry).
 SEED_APPAREL_MAP = {
     408333: "sv08-219",
     418755: "sv08-238",
@@ -63,6 +78,10 @@ def http_get(url: str, timeout: float = 30) -> bytes:
         return resp.read()
 
 
+def search_url(params: dict) -> str:
+    return "https://snkrdunk.com/search?" + urllib.parse.urlencode(params)
+
+
 def load_apparel_map() -> dict[int, str]:
     mapping = dict(SEED_APPAREL_MAP)
     if MAP_PATH.exists():
@@ -75,8 +94,8 @@ def load_apparel_map() -> dict[int, str]:
     return mapping
 
 
-def scrape_hottest(limit: int = 30) -> list[tuple[int, str]]:
-    raw = http_get(HOTTEST_URL).decode("utf-8", "ignore")
+def scrape_search(url: str, limit: int = 30) -> list[tuple[int, str]]:
+    raw = http_get(url).decode("utf-8", "ignore")
     names = [
         html_lib.unescape(n.strip())
         for n in re.findall(r'productName[^"]*"[^>]*>\s*([^<]+)\s*<', raw)
@@ -91,7 +110,7 @@ def scrape_hottest(limit: int = 30) -> list[tuple[int, str]]:
 
     pairs = list(zip(ids, names))[:limit]
     if len(pairs) < 5:
-        raise RuntimeError(f"hottest scrape returned too few items ({len(pairs)})")
+        raise RuntimeError(f"scrape returned too few items ({len(pairs)}) for {url}")
     return pairs
 
 
@@ -99,10 +118,10 @@ def fetch_apparel(apparel_id: int) -> dict:
     data = json.loads(http_get(f"https://snkrdunk.com/v1/apparels/{apparel_id}"))
     media = data.get("primaryMedia") or {}
     return {
-        "localizedName": data.get("localizedName") or data.get("name") or "",
+        "nameEN": data.get("name") or "",
+        "localizedName": data.get("localizedName") or "",
         "imageURL": media.get("imageUrl"),
         "productNumber": data.get("productNumber"),
-        "minPrice": data.get("usedMinPrice") or data.get("minPrice"),
     }
 
 
@@ -112,51 +131,49 @@ def resolve_card_id(apparel_id: int, apparel_map: dict[int, str]) -> str:
     return f"snkrdunk-{apparel_id}"
 
 
-def display_names(jp_name: str) -> tuple[str, str]:
-    # Keep JP market name for both locales until we have translations.
-    cleaned = re.sub(r"\s+", " ", jp_name).strip()
-    short = cleaned
-    # Prefer "名 稀有度" before bracket block for compact UI.
-    m = re.match(r"^(.+?)\s*[\[（(]", cleaned)
+def short_english_name(en_name: str, fallback_jp: str) -> str:
+    source = (en_name or fallback_jp or "").strip()
+    source = re.sub(r"\s+", " ", source)
+    m = re.match(r"^(.+?)\s*[\[（(]", source)
     if m:
-        short = m.group(1).strip()
-    return short, short
+        return m.group(1).strip()
+    return source
 
 
 def content_fingerprint(groups: list[dict]) -> list[list[str]]:
     return [[c.get("cardID", "") for c in g.get("cards", [])] for g in groups]
 
 
-def build_payload(force: bool = False) -> tuple[dict, bool]:
-    apparel_map = load_apparel_map()
-    pairs = scrape_hottest(limit=30)
-
+def build_group(feed: dict, apparel_map: dict[int, str], limit: int = 30) -> dict:
+    url = search_url(feed["params"])
+    pairs = scrape_search(url, limit=limit)
     cards: list[dict] = []
-    for rank, (apparel_id, name) in enumerate(pairs, start=1):
+    for rank, (apparel_id, page_name) in enumerate(pairs, start=1):
         detail = fetch_apparel(apparel_id)
-        jp = detail["localizedName"] or name
-        name_tw, name_hk = display_names(jp)
+        en = short_english_name(detail["nameEN"], detail["localizedName"] or page_name)
         card_id = resolve_card_id(apparel_id, apparel_map)
         card = {
             "cardID": card_id,
-            "nameTW": name_tw,
-            "nameHK": name_hk,
+            "nameTW": en,
+            "nameHK": en,
             "tag": f"#{rank}",
             "apparelId": apparel_id,
         }
         if detail.get("imageURL"):
             card["imageURL"] = detail["imageURL"]
         cards.append(card)
-        time.sleep(0.12)  # be polite to SNKRDUNK
+        time.sleep(0.12)
+    return {
+        "id": f"snkrdunk-{feed['id']}",
+        "title": feed["title"],
+        "subtitle": feed["subtitle"],
+        "cards": cards,
+    }
 
-    groups = [
-        {
-            "id": "snkrdunk-hottest",
-            "title": "SNKRDUNK 人気シングル",
-            "subtitle": "Pokemon Card · トレカ（シングル）· 人気順",
-            "cards": cards,
-        }
-    ]
+
+def build_payload(force: bool = False) -> tuple[dict, bool]:
+    apparel_map = load_apparel_map()
+    groups = [build_group(feed, apparel_map, limit=30) for feed in FEEDS]
 
     previous = None
     if OUT.exists():
@@ -178,8 +195,10 @@ def build_payload(force: bool = False) -> tuple[dict, bool]:
         "version": 1,
         "updatedAt": updated_at,
         "timezoneNote": "App refreshes whenever remote updatedAt differs from local cache (not once/day).",
-        "source": "snkrdunk-hottest-pokemon-singles",
-        "sourceURL": HOTTEST_URL,
+        "source": "snkrdunk-pokemon-and-onepiece-singles",
+        "sources": {
+            feed["id"]: search_url(feed["params"]) for feed in FEEDS
+        },
         "groups": groups,
     }
     return payload, changed
@@ -192,10 +211,11 @@ def main() -> int:
     args = parser.parse_args()
 
     payload, changed = build_payload(force=args.force)
-    print(f"cards={len(payload['groups'][0]['cards'])} changed={changed} updatedAt={payload['updatedAt']}")
+    counts = {g["id"]: len(g["cards"]) for g in payload["groups"]}
+    print(f"groups={counts} changed={changed} updatedAt={payload['updatedAt']}")
 
     if args.dry_run:
-        print(json.dumps(payload, ensure_ascii=False, indent=2)[:2000])
+        print(json.dumps(payload, ensure_ascii=False, indent=2)[:2500])
         return 0
 
     if not changed and not args.force:
