@@ -1,21 +1,23 @@
-# Pull EV Trending Cards
+# pull-ev-trending
 
-Public feed of curated Pokémon TCG blind-pull hit cards for the **PullEV** iOS app.
+Remote trending feed for [PullEV](https://github.com/vincentchau-vc) (iOS blind-pull EV calculator).
 
-## App URL
+## Feed
 
+- Raw JSON: https://raw.githubusercontent.com/vincentchau-vc/pull-ev-trending/main/trending.json
+- Source: [SNKRDUNK hottest Pokemon singles](https://snkrdunk.com/search?keywords=Pokemon+Card+Game+%E3%83%88%E3%83%AC%E3%82%AB+%28%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89%29&searchCategoryIds=6%2F33&brandIds=pokemon&sort=hottest&page=1)
+
+## Schema notes
+
+- `updatedAt` — UTC ISO-8601. Bumped **only when ranked content changes**.
+- App compares remote `updatedAt` to local cache and refreshes when they differ (not once-per-day).
+
+## Refresh locally
+
+```bash
+python3 scripts/refresh_trending.py
+# python3 scripts/refresh_trending.py --force   # rewrite even if unchanged
+# python3 scripts/refresh_trending.py --dry-run
 ```
-https://raw.githubusercontent.com/vincentchau-vc/pull-ev-trending/main/trending.json
-```
 
-## Schema
-
-- `version` — integer schema version
-- `updatedAt` — ISO-8601 UTC timestamp of last regeneration
-- `groups[]` — pack groups with `id`, `title`, `subtitle`, `cards[]`
-- `cards[]` — `cardID` (TCGdex), `nameTW`, `nameHK`, optional `tag`
-
-## Notes
-
-- This is a **curated / regenerated daily** list for convenience, not a scraped SNKRDUNK live ranking.
-- Automation runs around **06:00 Asia/Hong_Kong**.
+Optional overlays for apparel → TCGdex id: edit `apparel-map.json`.

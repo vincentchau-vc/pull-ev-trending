@@ -1,15 +1,31 @@
-# Agent notes for daily trending refresh
+# Agent notes for SNKRDUNK hottest → trending.json
 
 When regenerating `trending.json`:
 
-1. Keep `version` at `1` unless schema changes.
-2. **Always** set `updatedAt` to the current UTC time in ISO-8601 (e.g. `2026-07-15T04:30:00Z`), even if the card list is unchanged.
-3. Prefer Japanese/blind-pull relevant hits: recent SV sets, 151, classic alts still common in pools.
-4. Every `cardID` must be a valid TCGdex-style id the PullEV app already understands.
-5. Do **not** scrape SNKRDUNK HTML. Use public knowledge, existing list evolution, and obvious new-set chase cards only.
-6. Keep roughly 10–25 cards total across a few groups; drop stale fillers when adding newer hits.
-7. Validate JSON before commit.
-8. **Always commit and push** `trending.json` to `main` after updating `updatedAt`.
-   - Message example: `chore: refresh trending.json`
-   - Do **not** skip the commit just because the card list looks the same.
-9. If you cannot push, fail the run clearly (do not report success).
+1. Prefer running the scraper:
+   ```bash
+   python3 scripts/refresh_trending.py
+   ```
+   Use `--force` only when you must bump `updatedAt` without a rank change.
+
+2. Keep `version` at `1` unless the schema changes.
+
+3. **Only update the file when ranked content changes.** The script already does this:
+   - If the ordered `cardID` list is unchanged → leave the file alone (do not bump `updatedAt`, do not commit).
+   - If ranks / cards change → rewrite `trending.json` and set `updatedAt` to current UTC ISO-8601.
+
+4. Source of truth for ranks:
+   SNKRDUNK search (Pokemon · トレカ シングル · `sort=hottest`):
+   https://snkrdunk.com/search?keywords=Pokemon+Card+Game+%E3%83%88%E3%83%AC%E3%82%AB+%28%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89%29&searchCategoryIds=6%2F33&brandIds=pokemon&sort=hottest&page=1
+
+5. Each card should include `cardID`, `nameTW`, `nameHK`, `tag` (`#1`…), `apparelId`, and `imageURL` when available.
+   - Known apparel IDs map via `apparel-map.json` (and script seed) to TCGdex-style IDs.
+   - Unknown cards use `snkrdunk-{apparelId}`; the app prices via `apparelId`.
+
+6. Validate JSON before commit.
+
+7. If content changed: **commit and push** to `main`.
+   - Message example: `chore: refresh trending from SNKRDUNK hottest`
+   - If unchanged: exit successfully with no commit.
+
+8. If you cannot push after a content change, fail the run clearly.

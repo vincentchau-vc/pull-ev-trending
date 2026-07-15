@@ -1,151 +1,254 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-15T04:26:13Z",
-  "timezoneNote": "App should refresh at most once per local day. Automation regenerates around 06:00 Asia/Hong_Kong (22:00 UTC previous calendar day).",
-  "source": "curated-blind-pull-hits",
+  "updatedAt": "2026-07-15T06:39:04Z",
+  "timezoneNote": "App refreshes whenever remote updatedAt differs from local cache (not once/day).",
+  "source": "snkrdunk-hottest-pokemon-singles",
+  "sourceURL": "https://snkrdunk.com/search?keywords=Pokemon+Card+Game+%E3%83%88%E3%83%AC%E3%82%AB+%28%E3%82%B7%E3%83%B3%E3%82%B0%E3%83%AB%E3%82%AB%E3%83%BC%E3%83%89%29&searchCategoryIds=6%2F33&brandIds=pokemon&sort=hottest&page=1",
   "groups": [
     {
-      "id": "sv08",
-      "title": "SV8 超電突圍 / 噴湧",
-      "subtitle": "皮卡丘 ex SAR 係近期盲抽頭號大獎",
+      "id": "snkrdunk-hottest",
+      "title": "SNKRDUNK 人気シングル",
+      "subtitle": "Pokemon Card · トレカ（シングル）· 人気順",
       "cards": [
         {
-          "cardID": "sv08-238",
-          "nameTW": "皮卡丘 ex（特別插畫）",
-          "nameHK": "比卡超 ex（特別插畫）",
-          "tag": "SIR"
+          "cardID": "snkrdunk-100076",
+          "nameTW": "ポケモンごっこ SR",
+          "nameHK": "ポケモンごっこ SR",
+          "tag": "#1",
+          "apparelId": 100076,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20221018020511-0.webp"
         },
         {
-          "cardID": "sv08-057",
-          "nameTW": "皮卡丘 ex（RR）",
-          "nameHK": "比卡超 ex（RR）",
-          "tag": "RR"
+          "cardID": "snkrdunk-752787",
+          "nameTW": "ピッピ AR",
+          "nameHK": "ピッピ AR",
+          "tag": "#2",
+          "apparelId": 752787,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20260122103551-0.webp"
         },
         {
-          "cardID": "sv08-203",
-          "nameTW": "美納斯 ex（SAR）",
-          "nameHK": "美納斯 ex（SAR）",
-          "tag": "SAR"
+          "cardID": "snkrdunk-96729",
+          "nameTW": "ブラッキーVMAX CSR",
+          "nameHK": "ブラッキーVMAX CSR",
+          "tag": "#3",
+          "apparelId": 96729,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20220915091627-0.webp"
         },
-        {
-          "cardID": "sv08-223",
-          "nameTW": "三首惡龍 ex（SAR）",
-          "nameHK": "三首惡龍 ex（SAR）",
-          "tag": "SAR"
-        }
-      ]
-    },
-    {
-      "id": "sv035",
-      "title": "SV3.5 / 151",
-      "subtitle": "復刻盲抽長青款",
-      "cards": [
-        {
-          "cardID": "sv03.5-199",
-          "nameTW": "噴火龍 ex（SAR）",
-          "nameHK": "背襲龍 ex（SAR）",
-          "tag": "SAR"
-        },
-        {
-          "cardID": "sv03.5-006",
-          "nameTW": "噴火龍 ex（RR）",
-          "nameHK": "背襲龍 ex（RR）",
-          "tag": "RR"
-        },
-        {
-          "cardID": "sv03.5-205",
-          "nameTW": "夢幻 ex（SAR）",
-          "nameHK": "夢幻 ex（SAR）",
-          "tag": "SAR"
-        },
-        {
-          "cardID": "sv03.5-151",
-          "nameTW": "夢幻 ex（RR）",
-          "nameHK": "夢幻 ex（RR）",
-          "tag": "RR"
-        }
-      ]
-    },
-    {
-      "id": "sv04a",
-      "title": "SV4a 閃色寶藏",
-      "subtitle": "高級擴充包常見回歸",
-      "cards": [
-        {
-          "cardID": "sv04.5-349",
-          "nameTW": "噴火龍 ex（SAR）",
-          "nameHK": "背襲龍 ex（SAR）",
-          "tag": "SAR"
-        }
-      ]
-    },
-    {
-      "id": "mega",
-      "title": "MEGA Dream ex",
-      "subtitle": "最新高級包熱門",
-      "cards": [
         {
           "cardID": "mep-023",
-          "nameTW": "超級噴火龍 X ex（MA）",
-          "nameHK": "超級背襲龍 X ex（MA）",
-          "tag": "MA"
-        }
-      ]
-    },
-    {
-      "id": "promo",
-      "title": "Promo / 聯名",
-      "subtitle": "高價收藏向",
-      "cards": [
+          "nameTW": "メガリザードンXex MA",
+          "nameHK": "メガリザードンXex MA",
+          "tag": "#4",
+          "apparelId": 722239,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20251128023141-0.webp"
+        },
+        {
+          "cardID": "snkrdunk-671486",
+          "nameTW": "ピカチュウ P",
+          "nameHK": "ピカチュウ P",
+          "tag": "#5",
+          "apparelId": 671486,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-M-P-020-of.webp"
+        },
+        {
+          "cardID": "snkrdunk-704401",
+          "nameTW": "メガリザードンXex SAR",
+          "nameHK": "メガリザードンXex SAR",
+          "tag": "#6",
+          "apparelId": 704401,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20250925055456-1.webp"
+        },
+        {
+          "cardID": "snkrdunk-730956",
+          "nameTW": "ピカチュウex SAR",
+          "nameHK": "ピカチュウex SAR",
+          "tag": "#7",
+          "apparelId": 730956,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20251128090358-4.webp"
+        },
+        {
+          "cardID": "snkrdunk-92114",
+          "nameTW": "リザードンプレミアムファイル2: 旧裏",
+          "nameHK": "リザードンプレミアムファイル2: 旧裏",
+          "tag": "#8",
+          "apparelId": 92114,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/7303405.webp"
+        },
+        {
+          "cardID": "snkrdunk-687275",
+          "nameTW": "メガリザードンXex RR",
+          "nameHK": "メガリザードンXex RR",
+          "tag": "#9",
+          "apparelId": 687275,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20250925052021-12.webp"
+        },
+        {
+          "cardID": "snkrdunk-729387",
+          "nameTW": "コダック AR",
+          "nameHK": "コダック AR",
+          "tag": "#10",
+          "apparelId": 729387,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20251128022333-5.webp"
+        },
+        {
+          "cardID": "snkrdunk-730964",
+          "nameTW": "メガカイリューex SAR",
+          "nameHK": "メガカイリューex SAR",
+          "tag": "#11",
+          "apparelId": 730964,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20251128090358-3.webp"
+        },
+        {
+          "cardID": "snkrdunk-128124",
+          "nameTW": "ミュウex UR",
+          "nameHK": "ミュウex UR",
+          "tag": "#12",
+          "apparelId": 128124,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20230706045037-0.webp"
+        },
+        {
+          "cardID": "snkrdunk-674418",
+          "nameTW": "メガゲンガーex",
+          "nameHK": "メガゲンガーex",
+          "tag": "#13",
+          "apparelId": 674418,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20250904105828-2.webp"
+        },
+        {
+          "cardID": "snkrdunk-98534",
+          "nameTW": "MレックウザEX: プロモ",
+          "nameHK": "MレックウザEX: プロモ",
+          "tag": "#14",
+          "apparelId": 98534,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20221004015410-5.webp"
+        },
+        {
+          "cardID": "snkrdunk-826553",
+          "nameTW": "メガダークライex SAR",
+          "nameHK": "メガダークライex SAR",
+          "tag": "#15",
+          "apparelId": 826553,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/aa140a49-418a-4b9b-b8ca-e7d1b72d0307.webp"
+        },
+        {
+          "cardID": "snkrdunk-618447",
+          "nameTW": "フクオカのピカチュウ P",
+          "nameHK": "フクオカのピカチュウ P",
+          "tag": "#16",
+          "apparelId": 618447,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20250613060628-1.webp"
+        },
+        {
+          "cardID": "snkrdunk-776365",
+          "nameTW": "メガゲッコウガex SAR",
+          "nameHK": "メガゲッコウガex SAR",
+          "tag": "#17",
+          "apparelId": 776365,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/e51cbcb5-3be1-4420-ab26-8777703f7c25.webp"
+        },
+        {
+          "cardID": "snkrdunk-724996",
+          "nameTW": "メガゲンガーex SAR",
+          "nameHK": "メガゲンガーex SAR",
+          "tag": "#18",
+          "apparelId": 724996,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20251128090358-0.webp"
+        },
+        {
+          "cardID": "snkrdunk-737036",
+          "nameTW": "ピカチュウex SAR仕様",
+          "nameHK": "ピカチュウex SAR仕様",
+          "tag": "#19",
+          "apparelId": 737036,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20251219023825-0.webp"
+        },
+        {
+          "cardID": "snkrdunk-455595",
+          "nameTW": "ニンフィアex SAR",
+          "nameHK": "ニンフィアex SAR",
+          "tag": "#20",
+          "apparelId": 455595,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122510-4.webp"
+        },
         {
           "cardID": "svp-085",
-          "nameTW": "戴灰色毛氈帽的皮卡丘",
-          "nameHK": "戴灰色毛氈帽的比卡超",
-          "tag": "Van Gogh"
-        }
-      ]
-    },
-    {
-      "id": "classic",
-      "title": "經典高利 Alt / VMAX",
-      "subtitle": "盲抽池仍常見回歸卡",
-      "cards": [
-        {
-          "cardID": "swsh7-215",
-          "nameTW": "月亮伊布 VMAX（Alt）",
-          "nameHK": "月亮伊布 VMAX（Alt）",
-          "tag": "Moonbreon"
+          "nameTW": "ピカチュウ : プロモ",
+          "nameHK": "ピカチュウ : プロモ",
+          "tag": "#21",
+          "apparelId": 146897,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20240221105626-0.webp"
         },
         {
-          "cardID": "swsh11-212",
-          "nameTW": "騎拉帝納 VSTAR（Alt）",
-          "nameHK": "騎拉帝納 VSTAR（Alt）",
-          "tag": "Alt"
+          "cardID": "snkrdunk-456933",
+          "nameTW": "シャワーズex SAR",
+          "nameHK": "シャワーズex SAR",
+          "tag": "#22",
+          "apparelId": 456933,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122642-4.webp"
         },
         {
-          "cardID": "swsh7-65",
-          "nameTW": "太陽伊布 VMAX",
-          "nameHK": "太陽伊布 VMAX",
-          "tag": "VMAX"
-        }
-      ]
-    },
-    {
-      "id": "sv09",
-      "title": "SV9 搭檔",
-      "subtitle": "人物支援 ex",
-      "cards": [
-        {
-          "cardID": "sv09-053",
-          "nameTW": "奇樹的電肚蛙 ex",
-          "nameHK": "奇樹的電肚蛙 ex",
-          "tag": "ex"
+          "cardID": "snkrdunk-730952",
+          "nameTW": "メガゲンガーex MA",
+          "nameHK": "メガゲンガーex MA",
+          "tag": "#23",
+          "apparelId": 730952,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20251128023141-7.webp"
         },
         {
-          "cardID": "sv09-056",
-          "nameTW": "莉莉艾的皮皮 ex",
-          "nameHK": "莉莉艾的皮皮 ex",
-          "tag": "ex"
+          "cardID": "snkrdunk-455596",
+          "nameTW": "ブラッキーex SAR",
+          "nameHK": "ブラッキーex SAR",
+          "tag": "#24",
+          "apparelId": 455596,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20241205122342-4.webp"
+        },
+        {
+          "cardID": "snkrdunk-730958",
+          "nameTW": "ロケット団のミュウツーex SAR",
+          "nameHK": "ロケット団のミュウツーex SAR",
+          "tag": "#25",
+          "apparelId": 730958,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20251127044048-0.webp"
+        },
+        {
+          "cardID": "snkrdunk-730968",
+          "nameTW": "メガカイリューex MUR",
+          "nameHK": "メガカイリューex MUR",
+          "tag": "#26",
+          "apparelId": 730968,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20251127022852-0.webp"
+        },
+        {
+          "cardID": "snkrdunk-704407",
+          "nameTW": "メガリザードンXex MUR",
+          "nameHK": "メガリザードンXex MUR",
+          "tag": "#27",
+          "apparelId": 704407,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20250925093428-0.webp"
+        },
+        {
+          "cardID": "snkrdunk-740404",
+          "nameTW": "ピカチュウ :ミラー",
+          "nameHK": "ピカチュウ :ミラー",
+          "tag": "#28",
+          "apparelId": 740404,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-2025-12-12-49509-of.webp"
+        },
+        {
+          "cardID": "snkrdunk-160147",
+          "nameTW": "ミュウex SSR",
+          "nameHK": "ミュウex SSR",
+          "tag": "#29",
+          "apparelId": 160147,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20231130111032-8.webp"
+        },
+        {
+          "cardID": "snkrdunk-116069",
+          "nameTW": "コイキング AR",
+          "nameHK": "コイキング AR",
+          "tag": "#30",
+          "apparelId": 116069,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20250310104659-0.webp"
         }
       ]
     }
