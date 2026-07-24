@@ -4,9 +4,10 @@ When regenerating `trending.json`:
 
 1. Prefer running the scraper:
    ```bash
-   python3 scripts/refresh_trending.py
+   python3 scripts/refresh_trending.py --commit-push
    ```
    Use `--force` only when you must bump `updatedAt` without a rank change.
+   Omit `--commit-push` only for local dry experiments (`--dry-run`).
 
 2. Keep `version` at `1` unless the schema changes.
 
@@ -18,6 +19,7 @@ When regenerating `trending.json`:
    - `snkrdunk-pokemon` — Pokémon singles · `sort=hottest`
    - `snkrdunk-onepiece` — One Piece singles · `sort=popular`
    Titles / subtitles / card display names must be **English**.
+   Each group targets **300** cards (paginate SNKRDUNK search pages until filled or exhausted).
 
 5. Each card should include `cardID`, `nameTW`, `nameHK` (both EN short names), `tag` (`#1`…), `apparelId`, and `imageURL` when available.
    - Known apparel IDs map via `apparel-map.json` (and script seed) to TCGdex-style IDs (Pokémon).
@@ -25,7 +27,8 @@ When regenerating `trending.json`:
 
 6. Validate JSON before commit.
 
-7. If content changed: **commit and push** to `main`.
+7. If content changed: **commit AND push** to `main` (required — commit-only leaves `raw.githubusercontent.com` stale).
+   - Prefer: `python3 scripts/refresh_trending.py --commit-push`
    - Message example: `chore: refresh trending from SNKRDUNK`
    - If unchanged: exit successfully with no commit.
 
