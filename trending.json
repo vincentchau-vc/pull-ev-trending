@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-24T10:02:55Z",
+  "updatedAt": "2026-07-24T10:30:00Z",
   "timezoneNote": "App refreshes whenever remote updatedAt differs from local cache (not once/day).",
   "source": "snkrdunk-pokemon-and-onepiece-singles",
   "sources": {
@@ -510,20 +510,20 @@
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20220908044127-0.webp"
         },
         {
-          "cardID": "snkrdunk-128124",
-          "nameTW": "Mew ex UR",
-          "nameHK": "Mew ex UR",
-          "tag": "#63",
-          "apparelId": 128124,
-          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20230706045037-0.webp"
-        },
-        {
           "cardID": "snkrdunk-826556",
           "nameTW": "MEGA Darkrai ex MUR",
           "nameHK": "MEGA Darkrai ex MUR",
-          "tag": "#64",
+          "tag": "#63",
           "apparelId": 826556,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/87be8e00-ffce-4c60-8ac9-7d3afa5e0095.webp"
+        },
+        {
+          "cardID": "snkrdunk-128124",
+          "nameTW": "Mew ex UR",
+          "nameHK": "Mew ex UR",
+          "tag": "#64",
+          "apparelId": 128124,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20230706045037-0.webp"
         },
         {
           "cardID": "snkrdunk-132279",
@@ -750,20 +750,20 @@
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20230914103110-0.webp"
         },
         {
-          "cardID": "snkrdunk-332798",
-          "nameTW": "Pikachu P",
-          "nameHK": "Pikachu P",
-          "tag": "#93",
-          "apparelId": 332798,
-          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SV-P-SM-218-of.webp"
-        },
-        {
           "cardID": "snkrdunk-105568",
           "nameTW": "Charizard V SAR",
           "nameHK": "Charizard V SAR",
-          "tag": "#94",
+          "tag": "#93",
           "apparelId": 105568,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20221201134936-0.webp"
+        },
+        {
+          "cardID": "snkrdunk-332798",
+          "nameTW": "Pikachu P",
+          "nameHK": "Pikachu P",
+          "tag": "#94",
+          "apparelId": 332798,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-SV-P-SM-218-of.webp"
         },
         {
           "cardID": "snkrdunk-396023",
@@ -838,10 +838,18 @@
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-7326393-yu.webp"
         },
         {
+          "cardID": "snkrdunk-137076",
+          "nameTW": "Pikachu C",
+          "nameHK": "Pikachu C",
+          "tag": "#104",
+          "apparelId": 137076,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-S10b-3696.webp"
+        },
+        {
           "cardID": "snkrdunk-730961",
           "nameTW": "N's Zoroark ex SAR",
           "nameHK": "N's Zoroark ex SAR",
-          "tag": "#104",
+          "tag": "#105",
           "apparelId": 730961,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20251128023630-2.webp"
         },
@@ -849,17 +857,9 @@
           "cardID": "sv04.5-349",
           "nameTW": "Charizard ex SAR",
           "nameHK": "Charizard ex SAR",
-          "tag": "#105",
+          "tag": "#106",
           "apparelId": 162095,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20231206074720-0.webp"
-        },
-        {
-          "cardID": "snkrdunk-137076",
-          "nameTW": "Pikachu C",
-          "nameHK": "Pikachu C",
-          "tag": "#106",
-          "apparelId": 137076,
-          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-S10b-3696.webp"
         },
         {
           "cardID": "snkrdunk-91157",
@@ -1726,20 +1726,20 @@
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5715.webp"
         },
         {
-          "cardID": "snkrdunk-742562",
-          "nameTW": "MEGA Charizard Y ex MUR Style",
-          "nameHK": "MEGA Charizard Y ex MUR Style",
-          "tag": "#215",
-          "apparelId": 742562,
-          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20251219004556-0.webp"
-        },
-        {
           "cardID": "snkrdunk-550925",
           "nameTW": "Team Rocket's Meowth AR",
           "nameHK": "Team Rocket's Meowth AR",
-          "tag": "#216",
+          "tag": "#215",
           "apparelId": 550925,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20250418045818-8.webp"
+        },
+        {
+          "cardID": "snkrdunk-742562",
+          "nameTW": "MEGA Charizard Y ex MUR Style",
+          "nameHK": "MEGA Charizard Y ex MUR Style",
+          "tag": "#216",
+          "apparelId": 742562,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20251219004556-0.webp"
         },
         {
           "cardID": "snkrdunk-111992",
@@ -1998,20 +1998,20 @@
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20260122103142-0.webp"
         },
         {
-          "cardID": "snkrdunk-96731",
-          "nameTW": "Mimikyu VMAX",
-          "nameHK": "Mimikyu VMAX",
-          "tag": "#249",
-          "apparelId": 96731,
-          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20220915091825-0.webp"
-        },
-        {
           "cardID": "snkrdunk-128116",
           "nameTW": "Venusaur ex SAR",
           "nameHK": "Venusaur ex SAR",
-          "tag": "#250",
+          "tag": "#249",
           "apparelId": 128116,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20241211034830-0.webp"
+        },
+        {
+          "cardID": "snkrdunk-96731",
+          "nameTW": "Mimikyu VMAX",
+          "nameHK": "Mimikyu VMAX",
+          "tag": "#250",
+          "apparelId": 96731,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20220915091825-0.webp"
         },
         {
           "cardID": "snkrdunk-100593",
@@ -2094,10 +2094,18 @@
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-S6a-0892.webp"
         },
         {
+          "cardID": "snkrdunk-585221",
+          "nameTW": "Reshiram ex BWR",
+          "nameHK": "Reshiram ex BWR",
+          "tag": "#261",
+          "apparelId": 585221,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20250606023326-0.webp"
+        },
+        {
           "cardID": "snkrdunk-141046",
           "nameTW": "Pikachu V RR",
           "nameHK": "Pikachu V RR",
-          "tag": "#261",
+          "tag": "#262",
           "apparelId": 141046,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-S8b-1602.webp"
         },
@@ -2105,7 +2113,7 @@
           "cardID": "snkrdunk-127035",
           "nameTW": "Manzai play Pikachu: PROMO",
           "nameHK": "Manzai play Pikachu: PROMO",
-          "tag": "#262",
+          "tag": "#263",
           "apparelId": 127035,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20230606070017-0.webp"
         },
@@ -2113,17 +2121,9 @@
           "cardID": "snkrdunk-112244",
           "nameTW": "Pichu Premium File 2: Old Back",
           "nameHK": "Pichu Premium File 2: Old Back",
-          "tag": "#263",
+          "tag": "#264",
           "apparelId": 112244,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20230205022908-0.webp"
-        },
-        {
-          "cardID": "snkrdunk-585221",
-          "nameTW": "Reshiram ex BWR",
-          "nameHK": "Reshiram ex BWR",
-          "tag": "#264",
-          "apparelId": 585221,
-          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20250606023326-0.webp"
         },
         {
           "cardID": "snkrdunk-554341",
@@ -2294,10 +2294,18 @@
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-M-P-019-of.webp"
         },
         {
+          "cardID": "snkrdunk-128132",
+          "nameTW": "Wartortle U: Master Ball Mirror",
+          "nameHK": "Wartortle U: Master Ball Mirror",
+          "tag": "#286",
+          "apparelId": 128132,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20231115074504-0.webp"
+        },
+        {
           "cardID": "snkrdunk-141431",
           "nameTW": "Zekrom: Mirror",
           "nameHK": "Zekrom: Mirror",
-          "tag": "#286",
+          "tag": "#287",
           "apparelId": 141431,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-S8a-1437.webp"
         },
@@ -2305,7 +2313,7 @@
           "cardID": "snkrdunk-141421",
           "nameTW": "Groudon: Mirror",
           "nameHK": "Groudon: Mirror",
-          "tag": "#287",
+          "tag": "#288",
           "apparelId": 141421,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-S8a-1427.webp"
         },
@@ -2313,7 +2321,7 @@
           "cardID": "snkrdunk-107559",
           "nameTW": "Pikachu: PROMO",
           "nameHK": "Pikachu: PROMO",
-          "tag": "#288",
+          "tag": "#289",
           "apparelId": 107559,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20221219072749-0.webp"
         },
@@ -2321,17 +2329,9 @@
           "cardID": "snkrdunk-731022",
           "nameTW": "MEGA Hawlucha ex SAR",
           "nameHK": "MEGA Hawlucha ex SAR",
-          "tag": "#289",
+          "tag": "#290",
           "apparelId": 731022,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20251128021421-0.webp"
-        },
-        {
-          "cardID": "snkrdunk-128132",
-          "nameTW": "Wartortle U: Master Ball Mirror",
-          "nameHK": "Wartortle U: Master Ball Mirror",
-          "tag": "#290",
-          "apparelId": 128132,
-          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20231115074504-0.webp"
         },
         {
           "cardID": "snkrdunk-103066",
@@ -2342,10 +2342,18 @@
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20221202045200-0.webp"
         },
         {
+          "cardID": "snkrdunk-321522",
+          "nameTW": "Slowpoke & Psyduck GX RR",
+          "nameHK": "Slowpoke & Psyduck GX RR",
+          "tag": "#292",
+          "apparelId": 321522,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-036758_P_YADONKODAKKUGX-of.webp"
+        },
+        {
           "cardID": "snkrdunk-128123",
           "nameTW": "Giovanni’s Charisma SAR",
           "nameHK": "Giovanni’s Charisma SAR",
-          "tag": "#292",
+          "tag": "#293",
           "apparelId": 128123,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20230616073400-0.webp"
         },
@@ -2353,7 +2361,7 @@
           "cardID": "snkrdunk-128087",
           "nameTW": "Wartortle AR",
           "nameHK": "Wartortle AR",
-          "tag": "#293",
+          "tag": "#294",
           "apparelId": 128087,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-SV2a-5718.webp"
         },
@@ -2361,7 +2369,7 @@
           "cardID": "snkrdunk-91438",
           "nameTW": "Rayquaza Illustration Collection: PROMO",
           "nameHK": "Rayquaza Illustration Collection: PROMO",
-          "tag": "#294",
+          "tag": "#295",
           "apparelId": 91438,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/7314644.webp"
         },
@@ -2369,7 +2377,7 @@
           "cardID": "snkrdunk-607932",
           "nameTW": "Seismitoad AR",
           "nameHK": "Seismitoad AR",
-          "tag": "#295",
+          "tag": "#296",
           "apparelId": 607932,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20250606014742-8.webp"
         },
@@ -2377,7 +2385,7 @@
           "cardID": "snkrdunk-395998",
           "nameTW": "Reshiram & Charizard GX RR",
           "nameHK": "Reshiram & Charizard GX RR",
-          "tag": "#296",
+          "tag": "#297",
           "apparelId": 395998,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/pkmn-tcg-7327800-yu.webp"
         },
@@ -2385,7 +2393,7 @@
           "cardID": "snkrdunk-144460",
           "nameTW": "Gengar",
           "nameHK": "Gengar",
-          "tag": "#297",
+          "tag": "#298",
           "apparelId": 144460,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/TCG-PKG-S4a-9697.webp"
         },
@@ -2393,7 +2401,7 @@
           "cardID": "snkrdunk-93046",
           "nameTW": "Friends in Alolan: PROMO",
           "nameHK": "Friends in Alolan: PROMO",
-          "tag": "#298",
+          "tag": "#299",
           "apparelId": 93046,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20230629020006-0.webp"
         },
@@ -2401,17 +2409,9 @@
           "cardID": "snkrdunk-92153",
           "nameTW": "Gyarados : Old Back",
           "nameHK": "Gyarados : Old Back",
-          "tag": "#299",
+          "tag": "#300",
           "apparelId": 92153,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/7303274.webp"
-        },
-        {
-          "cardID": "snkrdunk-91377",
-          "nameTW": "Pikachu wearing a poncho Pikachu: PROMO",
-          "nameHK": "Pikachu wearing a poncho Pikachu: PROMO",
-          "tag": "#300",
-          "apparelId": 91377,
-          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/7314749.webp"
         }
       ]
     },
@@ -3213,20 +3213,20 @@
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/20250301020330-11.webp"
         },
         {
-          "cardID": "snkrdunk-837244",
-          "nameTW": "Nami P :Participation Prize",
-          "nameHK": "Nami P :Participation Prize",
-          "tag": "#100",
-          "apparelId": 837244,
-          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/OPC-TCG-2026-06-10-P-112-of.webp"
-        },
-        {
           "cardID": "snkrdunk-297575",
           "nameTW": "O-Nami R",
           "nameHK": "O-Nami R",
-          "tag": "#101",
+          "tag": "#100",
           "apparelId": 297575,
           "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/OPC-TCG-OP06-101-20240618-ot.webp"
+        },
+        {
+          "cardID": "snkrdunk-837244",
+          "nameTW": "Nami P :Participation Prize",
+          "nameHK": "Nami P :Participation Prize",
+          "tag": "#101",
+          "apparelId": 837244,
+          "imageURL": "https://cdn.snkrdunk.com/upload_bg_removed/OPC-TCG-2026-06-10-P-112-of.webp"
         },
         {
           "cardID": "snkrdunk-349473",
